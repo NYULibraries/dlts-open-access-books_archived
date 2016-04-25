@@ -3,6 +3,8 @@ NYU Press Open Access Books
 
 A site for viewing and displaying epub books: http://openaccessbooks.nyupress.org/
 
+This repo replaces the original: [nyupress-epubs-site](https://github.com/NYULibraries/nyupress-epubs-site).
+
 ### Get the project
 `git clone git@github.com:NYULibraries/dlts-open-access-books.git oa-books`
 
