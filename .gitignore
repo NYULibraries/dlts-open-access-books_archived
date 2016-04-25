@@ -32,3 +32,6 @@ source/json/datasources/*
 !node_modules/grunt-contrib-cloneReadium
 !node_modules/detail_pages
 !node_modules/books
+
+# Emacs files
+*~
