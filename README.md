@@ -1,14 +1,10 @@
-NYU Press ePubs
-===================
+NYU Press Open Access Books
+===========================
 
-A site for viewing and displaying epub books.
+A site for viewing and displaying epub books: http://openaccessbooks.nyupress.org/
 
 ### Get the project
-`git clone git@github.com:NYULibraries/nyupress-epubs-site.git nyupress-epubs-site`
-
-### Use this branch
-`cd nyupress-epubs-site`
-`git checkout gruntTaskToBuild`
+`git clone git@github.com:NYULibraries/dlts-open-access-books.git oa-books`
 
 ### Install dependencies 
 `npm install`
