@@ -16,6 +16,7 @@ YUI().use(
     
     var body = Y.one('body')
       , container = Y.one('.library-items')
+      , docslength = parseInt(container.getAttribute("data-docslength"), 10)
       , query = Y.one('.query')
       , loadMoreButton = Y.one('.pure-button.loading')
       , datasourceURL = body.getAttribute('data-discovery') +
@@ -46,7 +47,9 @@ YUI().use(
                             'thumbHref'                     +
 
                         '&'                                 +
-                        'sort=author_sort+asc,title_sort+asc'
+                        'sort=author_sort+asc,title_sort+asc' +
+                        '&'                                 +
+                        'rows=' + docslength
       , searchString = '*:*'
       , transactions = []
       , pager = Y.one('ul.pure-paginator')

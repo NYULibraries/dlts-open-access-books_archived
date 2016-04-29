@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px auto 0px;
   width: auto;
   position: static;
-  max-width: 800px;
+  max-width: 1950px;
   padding: 0 10px;
 }
 
@@ -95,7 +95,7 @@ a.btn {
   position: static;
   padding: 0 10px;
   margin: 30px auto 70px;
-  max-width: 650px;
+ 
 }
 
 .data-container h2.page-title {
@@ -394,15 +394,12 @@ a.info-icon {
   white-space: normal;
 }
 
-.library-item:nth-child(odd) {
-  background: #f6f6f6;
-}
 
 .img_hold {
   display: table-cell;
   vertical-align: top;
-  width: 110px;
-  padding: 10px 10px 10px 0;
+  width: 140px;
+  padding: 10px 10px 10px 0 ;
 }
 
 .library-item img {
@@ -852,4 +849,29 @@ input.searchbox:focus {
 .book iframe {
   width: 100%;
   border: none;
+}
+
+/* flexbox layout */
+
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.flex-container .library-item {
+    -ms-flex:  1 0 390px;
+    -webkit-flex:  1 0 390px;
+    flex: 1 0 390px;
+  /*  padding-top: 20px;*/
+    /*  min-width: 400px;*/
+    padding-bottom: 20px;
+}
+
+.flex-container .library-item .book-info {
+    padding-right: 40px;
+    padding-left: 0;
 }
