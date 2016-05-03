@@ -136,7 +136,7 @@ YUI().use(
         , start = parseInt(response.response.start, 10)
         , docslength = parseInt(response.response.docs.length, 10)
         , docs = response.response.docs
-        , href = Y.Node.create('<a href> ...</a>')
+        , href = Y.Node.create('<a href>...</a>')
         , description
         , descriptionLength
         , node ;
