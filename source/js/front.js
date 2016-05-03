@@ -152,8 +152,14 @@ YUI().use(
       
       // render HTML and append to container
       container.append ( template ( { items: response.response.docs } ) ) ;
+
     
-      if ( start + docslength === numfound ) body.addClass('io-done') ;
+      if ( start + docslength === numfound ) {
+            container.append ("<div class='library-item empty-div'>&nbsp;</div>") ;
+            container.append ("<div class='library-item empty-div'>&nbsp;</div>") ;
+            container.append ("<div class='library-item empty-div'>&nbsp;</div>") ;
+            body.addClass('io-done') ;
+      }
 
       body.removeClass('io-loading');
 

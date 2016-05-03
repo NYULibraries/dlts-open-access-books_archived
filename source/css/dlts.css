@@ -836,6 +836,10 @@ input.searchbox:focus {
     margin-bottom: 10px;
     padding-bottom: 0px;
   }
+  .flex-container .library-item.empty-div {
+    border-bottom: none;
+    margin-bottom: 0px;
+  }
 }
 @media screen and (max-width: 600px) {
   .data-container {
