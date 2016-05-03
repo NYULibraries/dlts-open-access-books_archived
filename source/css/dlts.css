@@ -115,7 +115,7 @@ a.btn {
   font-size: 19px;
   line-height: 1.4;
   /* Gotham  Screen Smart Light = font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';  */
-  font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';
+  font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: normal;
   font-weight: 300;
   clear: both;
@@ -129,7 +129,7 @@ a.btn {
 
 .home .intro {
   /* Gotham  Screen Smart Light = font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';  */
-  font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';
+  font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 300;
   font-style: normal;
 }
@@ -195,7 +195,7 @@ footer#pagefooter li, footer#pagefooter li a:link, footer#pagefooter li a:visite
   color: #efefef;
   font-size: 13px;
   /* Gotham  Light = 'Gotham 3r', 'Gotham A', 'Gotham B' */
-  font-family: 'Gotham 3r', 'Gotham A', 'Gotham B', 'Helvetica Neue', sans-serif;
+  font-family: 'Gotham 3r', 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: normal;
   font-weight: 300;
 }
@@ -292,7 +292,7 @@ a.info-icon {
   text-transform: uppercase;
   padding-bottom: 3px;
   color: #555;
-  font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B', "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .detail-item .rights-info {
@@ -497,7 +497,7 @@ body.page footer#pagefooter {
 
 .navbar #site-title {
   /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-  font: normal 200 22px / 1 'Gotham 2r', 'Gotham A', 'Gotham B', arial;
+  font: normal 200 22px / 1 'Gotham 2r', 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, sans-serif;
   letter-spacing: .5px;
   text-transform: uppercase;
   color: white;
@@ -552,7 +552,7 @@ body.page footer#pagefooter {
   white-space: nowrap;
   /*text-transform: uppercase;*/
   /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-  font: normal 200 13px/1 'Gotham 2r', 'Gotham A', 'Gotham B';
+  font: normal 200 13px/1 'Gotham 2r', 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, sans-serif;
   color: #bbb;
 }
 
@@ -596,7 +596,7 @@ a#s-btn img {
 .searchform {
   margin: 0;
   /* Gotham  Screen Smart Light = font-family: 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';  */
-  font: normal 300 12px / 1 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B';
+  font: normal 300 12px / 1 'Gotham SSm 3r', 'Gotham SSm A', 'Gotham SSm B', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 input.searchbox {
@@ -636,7 +636,7 @@ input.searchbox:focus {
 @media screen and (min-width: 800px) {
   .home .navbar #site-title {
     /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-    font: normal 200 27px / 1 'Gotham 2r', 'Gotham A', 'Gotham B', Helvetica;
+    font: normal 200 27px / 1 'Gotham 2r', 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, sans-serif;
     padding-bottom: 8px;
   }
   .home .navbar #logo-replace, .home .navbar #logo-replace a {
@@ -708,12 +708,12 @@ input.searchbox:focus {
   }
   .navbar .reader #site-title {
     /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-    font: normal 200 16px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B';
+    font: normal 200 16px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, sans-serif;
     /* max-width: 15rem;*/
   }
   .home .navbar #site-title, .page .navbar #site-title, .navbar #site-title {
     /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-    font: normal 200 18px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B';
+    font: normal 200 18px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, sans-serif;
     /* max-width: 15rem;*/
   }
   .navbar {
@@ -786,7 +786,7 @@ input.searchbox:focus {
 @media screen and (max-width: 350px) {
   .home .navbar #site-title, .page .navbar #site-title, .navbar .reader #site-title, .navbar #site-title {
     /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
-    font: normal 200 14px/1.1 'Gotham 2r', 'Gotham A', 'Gotham B';
+    font: normal 200 14px/1.1 'Gotham 2r', 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, sans-serif;
   }
 }
 
