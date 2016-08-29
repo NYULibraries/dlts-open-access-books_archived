@@ -1,20 +1,25 @@
 /*
  * Custom Skin for NYU Press Open Access Books site
  */
+
 body {
   padding: 0;
   min-width: 300px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
-
-
-a:link, a:visited {
+a:link,
+a:visited {
   color: #6FA64D;
 }
 
@@ -27,6 +32,7 @@ body.io-loading {
 .readmore {
   white-space: nowrap;
 }
+
 
 /*a[target="_blank"] {
     background-position: center right;
@@ -52,7 +58,9 @@ a.btn {
   background: url(../images/oa_logo_sprite.png) no-repeat right bottom;
 }
 
+
 /* overriding bootstrap */
+
 .breadcrumb {
   background-color: #F5F5F5;
   border-radius: 0px;
@@ -62,7 +70,8 @@ a.btn {
   border-bottom: 1px solid #dedede;
 }
 
-.data-container h2.page-title a:link, .data-container h2.page-title a:visited {
+.data-container h2.page-title a:link,
+.data-container h2.page-title a:visited {
   color: #888888;
 }
 
@@ -83,6 +92,7 @@ a.btn {
   text-decoration: underline;
   font-weight: normal;
 }
+
 .data-container {
   width: auto;
   padding: 0 10px;
@@ -90,19 +100,22 @@ a.btn {
   max-width: 1950px;
   padding: 0 40px;
 }
- .navbar .container {
+
+.navbar .container {
   display: table;
   width: 100%;
   padding: 0 30px;
   max-width: 1950px;
   margin: 0 auto;
 }
- .breadcrumb {
+
+.breadcrumb {
   max-width: 1950px;
   padding: 8px 40px 6px;
 }
+
 .book .navbar .container {
-  padding: 0 ;
+  padding: 0;
   max-width: none;
   margin: 0 auto;
 }
@@ -141,13 +154,12 @@ a.btn {
 
 @media screen and (min-width: 1100px) {
   .home .intro span {
-    display:block;
+    display: block;
   }
 }
 
-
-
-.data-container h2.page-title a:link, .data-container h2.page-title a:visited {
+.data-container h2.page-title a:link,
+.data-container h2.page-title a:visited {
   color: #888888;
 }
 
@@ -191,7 +203,9 @@ footer#pagefooter li.social > span > span {
   width: 16px;
 }
 
-footer#pagefooter li, footer#pagefooter li a:link, footer#pagefooter li a:visited {
+footer#pagefooter li,
+footer#pagefooter li a:link,
+footer#pagefooter li a:visited {
   color: #efefef;
   font-size: 13px;
   /* Gotham  Light = 'Gotham 3r', 'Gotham A', 'Gotham B' */
@@ -226,7 +240,6 @@ a.info-icon {
   display: none;
 }
 
-
 .detail-item {
   margin-top: 3rem;
   height: auto;
@@ -234,16 +247,16 @@ a.info-icon {
 
 .detail-item .book-title {
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.15;
   padding-bottom: 8px;
 }
+
 .detail-item .book-subtitle {
   font-size: 17px;
+  padding-top: 5px;
   line-height: 1.2;
-  display:block;
+  display: block;
 }
-
-
 
 .detail-item .img-hold {
   float: left;
@@ -252,7 +265,6 @@ a.info-icon {
   width: 27%;
   max-width: 160px;
   height: auto;
-  
 }
 
 .detail-item .img-hold img {
@@ -326,14 +338,12 @@ a.info-icon {
   padding: 0;
 }
 
-
 .library-item .buttons {
   /*float: right;*/
   position: static;
   width: auto;
   padding-top: 10px;
 }
-
 
 .library-item a.details {
   margin-right: 30px;
@@ -354,25 +364,26 @@ a.info-icon {
   display: table-cell;
   float: none;
 }
-.library-item  .book-title {
+
+.library-item .book-title {
   font-weight: 300;
   font-size: 20px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.25;
+  line-height: 1.2;
   padding-bottom: 4px;
 }
+
 .library-item .book-subtitle {
   display: block;
   font-size: 1.1rem;
-  line-height: 1.1;
-
+  line-height: 1.2;
+  padding-top: 2px;
 }
-
 
 .library-item .author {
   margin-top: 0px;
   padding-bottom: 10px;
-/*  line-height: 1.8;*/
+  /*  line-height: 1.8;*/
   font-size: 14px;
   color: #555;
   /* #6FA64D*/
@@ -388,10 +399,10 @@ a.info-icon {
   margin-top: 10px;
 }
 
-.library-item .book-title, .library-item .author {
+.library-item .book-title,
+.library-item .author {
   white-space: normal;
 }
-
 
 .img_hold {
   display: table-cell;
@@ -408,6 +419,7 @@ a.info-icon {
   height: auto;
   display: block;
 }
+
 .library-item .description {
   font: normal 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
@@ -417,14 +429,14 @@ a.info-icon {
   display: block;
 }
 
-
-
 .item-link:hover .book-title {
   text-decoration: underline;
 }
 
+
 /* Sticky footer styles  http://getbootstrap.com/examples/sticky-footer/sticky-footer.css
 -------------------------------------------------- */
+
 html {
   position: relative;
   min-height: 100%;
@@ -443,7 +455,9 @@ body.page footer#pagefooter {
   height: 42px;
 }
 
+
 /*  Navigation */
+
 
 /*  ------------------------------------------------------------------------- */
 
@@ -518,15 +532,15 @@ body.page footer#pagefooter {
   float: right;
 }
 
-.navbar a:link, .navbar a:visited {
+.navbar a:link,
+.navbar a:visited {
   color: white;
 }
 
-.navbar a:focus, .navbar a:hover {
+.navbar a:focus,
+.navbar a:hover {
   text-decoration: underline;
 }
-
-
 
 .navbar header {
   display: table-row;
@@ -580,9 +594,12 @@ a#s-btn img {
   height: auto;
 }
 
+
 /*  End Navigation */
 
+
 /*  Search */
+
 
 /*  ------------------------------------------------------------------------- */
 
@@ -637,7 +654,8 @@ input.searchbox:focus {
     font: normal 200 27px / 1 'Gotham 2r', 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, sans-serif;
     padding-bottom: 8px;
   }
-  .home .navbar #logo-replace, .home .navbar #logo-replace a {
+  .home .navbar #logo-replace,
+  .home .navbar #logo-replace a {
     height: 75px;
     width: 160px;
   }
@@ -664,12 +682,14 @@ input.searchbox:focus {
   h2.page-title {
     margin: 0px;
   }
-  footer#pagefooter li a:link, footer#pagefooter li a:visited {
+  footer#pagefooter li a:link,
+  footer#pagefooter li a:visited {
     margin-bottom: 1rem;
     margin: 0px;
     /* padding: 11px 10px 7px;*/
   }
-  footer#pagefooter li#dlts-link a:link, footer#pagefooter li#dlts-link a:visited {
+  footer#pagefooter li#dlts-link a:link,
+  footer#pagefooter li#dlts-link a:visited {
     padding-left: 0;
   }
   footer#pagefooter li#dlts-link > span {
@@ -692,7 +712,9 @@ input.searchbox:focus {
   .navbar .reader .icon-full-screen {
     display: none;
   }
-  .navbar .reader #logo-replace, .home .navbar #logo-replace, .navbar #logo-replace {
+  .navbar .reader #logo-replace,
+  .home .navbar #logo-replace,
+  .navbar #logo-replace {
     height: 40px;
     width: 40px;
   }
@@ -709,15 +731,20 @@ input.searchbox:focus {
     font: normal 200 16px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, sans-serif;
     /* max-width: 15rem;*/
   }
-  .home .navbar #site-title, .page .navbar #site-title, .navbar #site-title {
+  .home .navbar #site-title,
+  .page .navbar #site-title,
+  .navbar #site-title {
     /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
     font: normal 200 18px / 1.1 'Gotham 2r', 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, sans-serif;
     /* max-width: 15rem;*/
   }
   .navbar {
-    padding: 10px 10px;
+    padding: 10px 10px 10px 20px;
   }
-  .navbar .container, .navbar header, .navbar header > *, .navbar .n-utils,
+  .navbar .container,
+  .navbar header,
+  .navbar header > *,
+  .navbar .n-utils,
   .home .navbar header > * {
     display: block;
     padding: 0;
@@ -727,19 +754,22 @@ input.searchbox:focus {
     width: 100%;
     overflow: hidden;
   }
-  .navbar header h2, .navbar header h1 {
+  .navbar header h2,
+  .navbar header h1 {
     float: left;
   }
-  .navbar header h1, .home .navbar header h1 {
+  .navbar header h1,
+  .home .navbar header h1 {
     padding: 10px 0px 0px 10px;
   }
   .navbar header .n-utils {
     float: none;
   }
-  #search-toggle, #search-toggle[style] {
+  #search-toggle,
+  #search-toggle[style] {
     border: none;
     color: #888;
-    font: normal  12px / 1 arial;
+    font: normal 12px / 1 arial;
     padding: 10px;
     display: block !important;
     float: right;
@@ -782,7 +812,10 @@ input.searchbox:focus {
 }
 
 @media screen and (max-width: 350px) {
-  .home .navbar #site-title, .page .navbar #site-title, .navbar .reader #site-title, .navbar #site-title {
+  .home .navbar #site-title,
+  .page .navbar #site-title,
+  .navbar .reader #site-title,
+  .navbar #site-title {
     /* Gotham Extra Light = 'Gotham 2r', 'Gotham A', 'Gotham B' */
     font: normal 200 14px/1.1 'Gotham 2r', 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, sans-serif;
   }
@@ -793,43 +826,42 @@ input.searchbox:focus {
   border: none;
 }
 
+
 /* flexbox layout */
 
 .flex-container {
-    margin-left: -20px;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -ms-flex-wrap: wrap;
+  margin-left: -20px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
 }
 
 .flex-container .library-item {
-    -ms-flex:  1 0 390px;
-    -webkit-flex:  1 0 390px;
-    flex: 1 0 390px;
+  -ms-flex: 1 0 390px;
+  -webkit-flex: 1 0 390px;
+  flex: 1 0 390px;
   /*  padding-top: 20px;*/
-    /*  min-width: 400px;*/
-    padding-bottom: 20px;
+  /*  min-width: 400px;*/
+  padding-bottom: 20px;
 }
 
 .flex-container .library-item .book-info {
-    
-    padding-left: 0;
+  padding-left: 0;
 }
+
 @media screen and (max-width: 853px) {
-   .flex-container {
-    margin-left:0;
-   
+  .flex-container {
+    margin-left: 0;
   }
-   .img_hold {
-    padding-left:0;
-     padding-bottom: 20px;
-   
-     width: 25%;
+  .img_hold {
+    padding-left: 0;
+    padding-bottom: 20px;
+    width: 25%;
   }
- .flex-container .library-item {
+  .flex-container .library-item {
     border-bottom: 1px solid #dedede;
     margin-bottom: 10px;
     padding-bottom: 0px;
@@ -839,23 +871,32 @@ input.searchbox:focus {
     margin-bottom: 0px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .data-container {
     padding: 0 20px;
+    margin: 15px auto 70px;
+    overflow: auto;
   }
   .flex-container {
-    margin-left:0;  
+    margin-left: 0;
   }
   .img_hold {
-    padding-left:0;
+    padding-left: 0;
   }
   .flex-container .library-item {
     border-bottom: 1px solid #dedede;
     margin-bottom: 10px;
     padding-bottom: 0px;
   }
-   .buttons {
+  .buttons {
     margin: 1em 0 0;
+  }
+  .breadcrumb {
+    padding: 8px 20px 6px;
+  }
+  .detail-item {
+    margin-top: 1rem;
   }
 }
 
@@ -864,19 +905,25 @@ input.searchbox:focus {
     -ms-flex: 0 1 390px;
     -webkit-flex: 0 1 390px;
     flex: 0 1 390px;
-
   }
- .img_hold, .book-info {
-   display: block;
-   float:left;
-   padding-bottom: 5px;
-  }
-  .library-item .book-info {
+  .img_hold,
+  .book-info {
     display: block;
+    float: left;
+    padding-bottom: 5px;
+  }
+  .detail-item .img-hold {
+    width: auto;
+    max-width: 160px;
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .detail-item .book-title {
+    padding-bottom: 18px;
   }
   .buttons {
     margin-top: 0px;
     padding-bottom: 20px;
-    float:right;
+    float: right;
   }
 }
