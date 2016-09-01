@@ -68,6 +68,14 @@ a.btn {
   margin-bottom: 20px;
   padding: 8px 15px 6px;
   border-bottom: 1px solid #dedede;
+  padding: 8px 40px 6px;
+}
+
+.breadcrumb .page-title {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 8px 15px 6px 0 ;
+  display: block;
 }
 
 .data-container h2.page-title a:link,
@@ -99,6 +107,7 @@ a.btn {
   margin: 30px auto 70px;
   max-width: 1950px;
   padding: 0 40px;
+ 
 }
 
 .navbar .container {
@@ -107,11 +116,6 @@ a.btn {
   padding: 0 30px;
   max-width: 1950px;
   margin: 0 auto;
-}
-
-.breadcrumb {
-  max-width: 1950px;
-  padding: 8px 40px 6px;
 }
 
 .book .navbar .container {
@@ -243,6 +247,8 @@ a.info-icon {
 .detail-item {
   margin-top: 3rem;
   height: auto;
+ 
+  max-width: 800px;
 }
 
 .detail-item .book-title {
