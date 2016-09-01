@@ -16,7 +16,7 @@ YUI().use(
     
     var body = Y.one('body')
       , container = Y.one('.library-items')
-      , docslength = container.getAttribute("data-docslength") ? parseInt(container.getAttribute("data-docslength"), 10) : 10
+      , docslength = container.getAttribute("data-docslength") ? parseInt(container.getAttribute("data-docslength"), 10) : 12
       , query = Y.one('.query')
       , loadMoreButton = Y.one('.pure-button.loading')
       , collectionCode = body.getAttribute('data-collection-code')
