@@ -311,7 +311,7 @@ a.info-icon {
   padding-bottom: 4em;
   font-size: 12px;
   max-width: 70rem;
-  clear: left;
+  clear: both;
 }
 
 .detail-item .rights-info img {
