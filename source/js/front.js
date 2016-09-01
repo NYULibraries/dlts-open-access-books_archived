@@ -19,6 +19,7 @@ YUI().use(
       , docslength = container.getAttribute("data-docslength") ? parseInt(container.getAttribute("data-docslength"), 10) : 10
       , query = Y.one('.query')
       , loadMoreButton = Y.one('.pure-button.loading')
+      , collectionCode = body.getAttribute('data-collection-code')
       , datasourceURL = body.getAttribute('data-discovery') +
                         '/select?'                          +
 
@@ -26,7 +27,7 @@ YUI().use(
                         '&'                                 +
                         'qf=collection_code'                +
                         '&'                                 +
-                        'q=oa-books'                        +
+                        'q=' + collectionCode               +
 
                         '&'                                 +
                         'wt=json'                           +
