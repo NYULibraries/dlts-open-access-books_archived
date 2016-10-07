@@ -1,13 +1,14 @@
 {{=<% %>=}}
 {{#items}}
-  <div itemscope itemtype="http://schema.org/Book" class="library-item">
+  <article itemscope itemtype="http://schema.org/Book" class="library-item">
     <div class="img_hold">
       <a class="item-link" href="<%appUrl%>/details/{{identifier}}">
         <img itemprop="image" class="img-responsive" src="<%readiumUrl%>/{{thumbHref}}" title="{{title}}{{#if subtitle}}: {{subtitle}}{{/if}}" alt="{{title}}{{#if subtitle}}: {{subtitle}}{{/if}}" />
       </a>
     </div>
+  
     <div class="book-info">
-      <h4 itemprop="name" class="book-title"><a class="item-link" href="<%appUrl%>/details/{{identifier}}">{{title}} {{#if subtitle}}<span itemprop="name" class="book-subtitle">{{subtitle}}</span>{{/if}}</a></h4>
+      <h1 itemprop="name" class="book-title"><a class="item-link" href="<%appUrl%>/details/{{identifier}}">{{title}} {{#if subtitle}}<span itemprop="name" class="book-subtitle">{{subtitle}}</span>{{/if}}</a></h1>
       
 
       <div class="author">by <span itemprop="author">{{author}}</span></div>
@@ -17,5 +18,5 @@
         <a class="btn btn-default" href="<%appUrl%>/book/{{identifier}}">Read Online</a>
       </div>
     </div>
-  </div>
+  </article>
 {{/items}}

@@ -15,6 +15,7 @@ YUI().use(
 
     var body = Y.one('body')
       , container = Y.one('.library-items')
+      , docslength = parseInt(container.getAttribute("data-docslength"), 10)
       , query = Y.one('.query')
       , loadMoreButton = Y.one('.pure-button.loading')
       , totalFound = Y.one('.total-found')
@@ -52,7 +53,8 @@ YUI().use(
                             'author^2'                           +
                             '+'                                  +
                             'text'                               +
-
+                        '&'                                      +
+                        'rows=' + docslength                     +
                         '&'                                      +
                         'q='
       , searchString = '*:*'
@@ -182,7 +184,15 @@ YUI().use(
             })
         );
 
-        if (start + docslength === numfound) body.addClass('io-done');
+
+      if ( start + docslength === numfound ) {
+            container.append ("<div class='library-item empty-div'>&nbsp;</div>") ;
+            container.append ("<div class='library-item empty-div'>&nbsp;</div>") ;
+            container.append ("<div class='library-item empty-div'>&nbsp;</div>") ;
+            body.addClass('io-done') ;
+      }
+
+       
 
         body.removeClass('io-loading');
 

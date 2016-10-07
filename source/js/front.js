@@ -16,6 +16,7 @@ YUI().use(
     
     var body = Y.one('body')
       , container = Y.one('.library-items')
+      , docslength = container.getAttribute("data-docslength") ? parseInt(container.getAttribute("data-docslength"), 10) : 12
       , query = Y.one('.query')
       , loadMoreButton = Y.one('.pure-button.loading')
       , collectionCode = body.getAttribute('data-collection-code')
@@ -47,7 +48,9 @@ YUI().use(
                             'thumbHref'                     +
 
                         '&'                                 +
-                        'sort=author_sort+asc,title_sort+asc'
+                        'sort=author_sort+asc,title_sort+asc' +
+                        '&'                                 +
+                        'rows=' + docslength
       , searchString = '*:*'
       , transactions = []
       , pager = Y.one('ul.pure-paginator')
@@ -134,7 +137,7 @@ YUI().use(
         , start = parseInt(response.response.start, 10)
         , docslength = parseInt(response.response.docs.length, 10)
         , docs = response.response.docs
-        , href = Y.Node.create('<a href> ...</a>')
+        , href = Y.Node.create('<a href>...</a>')
         , description
         , descriptionLength
         , node ;
@@ -150,8 +153,14 @@ YUI().use(
       
       // render HTML and append to container
       container.append ( template ( { items: response.response.docs } ) ) ;
+
     
-      if ( start + docslength === numfound ) body.addClass('io-done') ;
+      if ( start + docslength === numfound ) {
+            container.append ("<div class='library-item empty-div'>&nbsp;</div>") ;
+            container.append ("<div class='library-item empty-div'>&nbsp;</div>") ;
+            container.append ("<div class='library-item empty-div'>&nbsp;</div>") ;
+            body.addClass('io-done') ;
+      }
 
       body.removeClass('io-loading');
 
