@@ -66,16 +66,16 @@ a.btn {
   border-radius: 0px;
   list-style: none outside none;
   margin-bottom: 20px;
-  padding: 8px 15px 6px;
+  padding: 8px 0 6px;
   border-bottom: 1px solid #dedede;
-  padding: 8px 40px 6px;
 }
 
 .breadcrumb .page-title {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 8px 15px 6px 0 ;
   display: block;
+  max-width: 1950px;
+  padding: 8px 40px 6px 40px;
 }
 
 .data-container h2.page-title a:link,
@@ -107,7 +107,10 @@ a.btn {
   margin: 30px auto 70px;
   max-width: 1950px;
   padding: 0 40px;
- 
+}
+
+.page .data-container {
+  max-width: 1000px;
 }
 
 .navbar .container {
@@ -247,7 +250,6 @@ a.info-icon {
 .detail-item {
   margin-top: 3rem;
   height: auto;
- 
   max-width: 800px;
 }
 
@@ -687,6 +689,9 @@ input.searchbox:focus {
   }
   h2.page-title {
     margin: 0px;
+  }
+  .breadcrumb .page-title {
+    padding: 8px 15px 6px 0;
   }
   footer#pagefooter li a:link,
   footer#pagefooter li a:visited {
