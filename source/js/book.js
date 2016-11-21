@@ -9,10 +9,9 @@ YUI().use( 'node' , function ( Y ) {
   var footerHeight = Y.one('footer').get('offsetHeight') ;
  
   var viewport = Y.DOM.viewportRegion() ;
-
-  Y.one('iframe').setStyles ( {
+  var  iframeheight = viewport.height - topOffsetHeight - footerHeight - iframeBottomMargin;
+  Y.one('.nyup-iframe').setStyles ( {
     top: topOffsetHeight,
-    height: viewport.height - topOffsetHeight - footerHeight - iframeBottomMargin
+    height: iframeheight,
   } ) ;
-
 } ) ;
