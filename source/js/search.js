@@ -74,16 +74,6 @@ YUI().use(
         Y.DltsUtil.truncate_page_path = page_path;
     }
 
-    function onSubmit(e) {
-
-        e.preventDefault();
-
-        var currentTarget = e.currentTarget,
-        value = Y.one('.pure-input');
-
-        location.href = currentTarget.get('action') + '/' + value.get('value');
-    }
-
     function onFailure() {}
 
     function onTimeout() {}
@@ -230,9 +220,7 @@ YUI().use(
     Y.jsonp(datasourceURL + searchString, { on: { success: onSuccess, failure: onFailure, timeout: onTimeout }, timeout: 3000 } ) ;
 
     loadMoreButton.on('click', onClick);
-    
-    body.delegate('submit', onSubmit, 'form');
-    
+
     pager.on('available', onPaginatorAvailable);
 
 } ) ;
