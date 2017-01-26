@@ -8,6 +8,7 @@ YUI().use(
   , 'jsonp'
   , 'jsonp-url'
   , 'gallery-idletimer'
+  , 'querystring-parse'
   , 'dlts-util'
   , function ( Y ) {
 
@@ -63,7 +64,13 @@ YUI().use(
       , fold = 200
       , match = location.pathname.match(/\/search\/(.*)/)
       , source = Y.one('#list-template').getHTML()
-      , template = Y.Handlebars.compile(source);
+      , template = Y.Handlebars.compile(source)
+      , queryParams = Y.QueryString.parse( document.location.search.slice( 1 ) );
+
+    // Fix bug https://jira.nyu.edu/jira/browse/NYUP-214
+    if ( queryParams.searchbox ) {
+        document.location.href = queryParams.searchbox;
+    }
 
     Y.Handlebars.registerHelper('truncate', Y.DltsUtil.truncate);
     if ( ! Y.DltsUtil.truncate_page_path ) {
