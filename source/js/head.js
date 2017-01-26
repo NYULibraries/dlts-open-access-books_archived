@@ -36,6 +36,6 @@ YUI().use('node', function(Y) {
 
     Y.one('#search-toggle').on('click', onClick) ;
     
-    Y.one('body').delegate('submit', onSubmit, 'form') ;
+    Y.one('#navbarsearchform' ).delegate('submit', onSubmit, 'form') ;
     
 } ) ;
